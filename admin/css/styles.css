@@ -1,0 +1,1106 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Hide the up and down arrows for number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; /* Removes the margin between the input and buttons */
+}
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    flex-grow: 1;
+}
+
+.toggle-password {
+    cursor: pointer;
+    margin-left: -30px; /* Adjust this value for proper spacing */
+}
+
+/* Pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
+}
+
+/* Pop-up content */
+.popup-content {
+    background-color: #e7d9d9;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* CSS to style the circular icon */
+.circle-icon {
+    width: 30px; /* Adjust the width and height as needed */
+    height: 30px;
+    border-radius: 50%; /* This property creates a circular shape */
+    background-color: #f0e9e9; /* Background color for the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Optional: Add a pointer cursor on hover */
+}
+
+.username{
+    margin: auto;
+    margin-left: 20% !important;
+}
+
+
+/* Hide the arrow for range inputs */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(219, 219, 210);
+    min-height: calc(100vh - 100px );
+}
+.profile{
+    min-height: calc(100vh - 150px );
+}
+.profile-headers{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+.cards-profile{
+   margin-bottom: 20px;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
+    
+}
+
+.home-image img{
+width: 600px;
+border: 2px solid black;
+border-radius: 100px 400px 300px 600px;
+}
+.my-header{
+    color: rgb(4, 3, 46);
+    font-size: 80px;
+    font-family: cursive;
+    text-align: center;
+}
+.loginurl{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+}
+.loginurl a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:fantasy;
+    background-color: rgba(82, 129, 218, 0.616);
+    padding: 3px;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 200px;
+    text-align: center;
+    color: #030207;
+    text-decoration: none;
+}
+.loginurl a:hover{
+    color: black;
+    background-color: white;
+}
+
+.my-inlinetext{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(26, 30, 223);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Custom class for showing mobile menu */
+.show {
+    display: block !important; /* Override Bootstrap's display value */
+}
+.card{
+    
+    background-color: rgb(224, 220, 220);
+}
+.form-control{
+margin-top: 10px;
+border: 1px solid black;
+}
+.form-header{
+    display: flex !important;
+    justify-content: center ;
+    align-items: center ;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(32, 101, 230);
+}
+.btn{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px !important;
+    
+    width: 30%;
+
+}
+.text-danger{
+    font-weight: bold;
+}
+
+.reg-question{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dashboard-wrapper{
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 100px );
+}
+
+.customer-order-section{
+display: flex;
+
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+background-color: rgba(205, 214, 214, 0.836);
+width: 100%;
+}
+
+.analysis-section{
+    display: flex;
+justify-content: center;
+width: 50%;
+flex-direction: column;
+
+}
+.details{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+.table-dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;    
+}
+.dashboard-table{
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.table-container th, td{
+    padding: 5px;
+    border: solid 1px black;
+}
+.check-data{
+    color: gray;
+    text-align: center;
+}
+.returns{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.index-wrapper
+{
+   
+    min-height: calc(100vh - 100px);
+}
+.index-sections{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 100px);
+}
+.section1 {
+    background-color: white;
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+}
+.welcoming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    /* background-image: linear-gradient(to right, rgba(192, 192, 192, 0.5), white); */
+}
+.welcoming h1{
+    font-size: 70px;
+        }
+.welcoming h2{
+ font-size: 40px;
+                }
+.welcoming h4{
+    font-size: 30px;
+    }
+.image-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+  }
+  
+  .svg-image {
+    max-width: 100%; 
+    height: 100%;
+    
+  }
+
+  .links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .learn-more{
+    display: flex;
+  justify-content: center;
+    margin-top: 20px;
+  margin-bottom: 50px;
+  
+  }
+  .learn-more a{
+    font-size: 20px;
+    background-color: rgba(82, 129, 218, 0.616);
+    padding: 3px;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: fit-content;
+    text-align: center;
+    color: #030207;
+    text-decoration: none;
+  }
+  .learn-more a:hover{
+    color: white;
+    background-color: gray;
+  }
+.section2{
+    background-image: linear-gradient(to right, rgba(245, 241, 241, 0.5), white);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-start;
+
+}
+.more-information{
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.simple-desc{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.addition{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.heading{
+    text-decoration: underline;
+}
+
+.view-order-wrapper{
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+}
+.view-section1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+.order-details{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.cost-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    /* background-color: aquamarine; */
+    min-height: 200px;
+}
+.cost-table  { 
+    
+   width: 100%;
+   max-height: 250px;
+   overflow-y: scroll;
+   text-align: center;
+  
+}
+.cost-table table { 
+    text-align: center;
+    width: 90%;
+ }
+.text-highlight{
+    background-color: aqua;
+    color: black;
+    font-weight: bolder;
+}
+.text-naming{
+    font-weight: bold;
+}
+.inner-details h1{
+text-align: center;
+color: #030207;
+margin-top: 5px;
+}
+
+
+.cost_header{
+    
+    color: #030207;
+    background-color: blue;
+}
+.total-lable{
+    font-weight: bold;
+}
+.danger-btn{
+    min-width: 60px;
+}
+
+.view-section2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.cost-details-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.cost-details-form form{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.cost-details-form form button{
+    margin-bottom: 10px;
+    min-width: 100px;
+}
+.cost-details-form form label{
+    font-weight: bold;
+}
+.delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+.delivery form{
+    
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.delivery form label{
+font-weight: bold;
+}
+
+.delivery form button{
+    min-width: 150px;
+}
+.return-information{
+    display: flex;
+    flex-direction: column;
+}
+.infoheader{
+    display: inherit;
+    justify-content: center;
+}
+.otherinfo{
+    display: flex;
+    flex-direction: row;
+    
+}
+.product-returns{
+    display: inherit;
+  width: 50%;  
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.returns-title{
+    font-weight: bold;
+    color: #030207;
+    margin-top: 5px;
+   
+}
+.month-returns{
+    display: inherit;
+  width: 50%;  
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.order-form{
+    margin-bottom: 10px;
+}
+.manage_users{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+}
+.manage_users_table{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.manage_users_table table{
+    width: 70%;
+   
+}
+
+@media (max-width: 780px) {
+    
+    .home-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       
+    }
+    .home-image{
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+           
+    }
+    .home-image img{
+        display: inherit;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 100px 400px 300px 600px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    }
+    .my-header{
+        color: rgb(4, 3, 46);
+        font-size: 50px;
+        font-family: cursive;
+        text-align: center;
+    }
+    .loginurl{
+        display: flex;
+        justify-content: center;
+      
+      }
+      .loginurl a{
+          font-size: 18px;
+          
+          padding: 3px;
+          justify-content: space-around;
+          border: 1px solid black;
+          border-radius: 30px;
+          width: 100px;
+          text-align: center;
+          color: #f9f9f9;
+      }
+      
+      .my-inlinetext{
+          text-align: center;
+          font-size: 20px;
+          color: rgb(46, 4, 85);
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      .btn{
+        width: 60%;
+        /* background-color: rgb(10, 172, 212); */
+      }
+      .index-sections{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .section1 {
+       background-color: white;
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .welcoming{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .welcoming h1{
+        font-size: 70px;
+            }
+    .welcoming h2{
+     font-size: 40px;
+                    }
+    .welcoming h4{
+        font-size: 30px;
+        }
+    .image-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      }
+      
+      .svg-image {
+        max-width: 100%; 
+        height: 100%;
+        
+      }
+      .links{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        
+      }
+      .section2{
+        background-image: linear-gradient(to right, rgba(245, 241, 241, 0.5), white);
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .other-image{
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .others{
+        max-width: 100%; 
+        height: 100%;
+    }
+    .simple-desc{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .addition{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .dashboard-wrapper{
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 100px );
+       
+    }
+
+    
+    .customer-order-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   min-height: calc(100vh - 100px);
+  
+    }
+    .dashboard-table{
+        border: 1px solid black;
+       width: 98%;
+       
+   }
+    .analysis-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    align-items: center;
+    }
+    .details{
+        display: flex;
+        flex-direction: row;
+    }
+    .chart-container canvas{
+        width: 100vw;
+        margin: 0;
+    }
+    
+    .table-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 50%;
+        max-height: 300px;
+     
+    }
+    .table-container table{
+        width: 100%;
+       height: 100%;
+        border: 1px solid #0c0909; /* Add borders for a cleaner look */
+        
+    }
+    .view-order-wrapper{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .view-section1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .order-details{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .cost-page{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        min-height: 200px;
+    }
+    .cost-table  { 
+       width: 90%;
+       max-height: 250px; 
+
+    }
+    .cost-table table{
+font-size: 12px;
+    }
+    .view-section2{
+        display: flex;
+        flex-direction: row;
+    }
+    .return-information{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoheader{
+        display: inherit;
+        justify-content: center;
+    }
+    .otherinfo{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .product-returns{
+        display: inherit;
+      width: 100%;  
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* .returns-title{
+        font-weight: bold;
+        background-color: antiquewhite;
+       
+    } */
+    .month-returns{
+        display: inherit;
+      width: 100%;  
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+   
+    .home-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* background-color: rgb(91, 91, 192); */
+    }
+    .home-image{
+        display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-content: center;
+            
+     }
+    .home-image img{
+        display: inherit;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 100px 400px 300px 600px;
+    }
+    .my-header{
+        color: rgb(4, 3, 46);
+        font-size: 40px;
+        font-family: cursive;
+        text-align: center;
+    }
+    .loginurl{
+        display: flex;
+        justify-content: center;
+      
+      }
+      .loginurl a{
+        font-size: 15px;
+        background-color: white;
+        
+        padding: 5px;
+        justify-content: space-around;
+        border: 1px solid black;
+        border-radius: 40px;
+        width: 100px;
+        text-align: center;
+        color: #030207;
+        text-decoration: none;
+    }
+      
+      .my-inlinetext{
+          text-align: center;
+          font-size: 20px;
+          color: rgb(26, 30, 223);
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      .btn{
+        width: 60%;
+      }
+
+  .index-wrapper
+{
+   
+    min-height: 100%;
+}
+      .index-sections{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .section1 {
+        
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        background-color: white;
+       
+    }
+    .welcoming{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .welcoming h1{
+        font-size: 50px;
+            }
+    .welcoming h2{
+     font-size: 30px;
+                    }
+    .welcoming h4{
+        font-size: 25px;
+        }
+    
+    .image-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      }
+      
+      .svg-image {
+        max-width: 100%; 
+        height: 100%;
+        /* border-radius: 100px 400px 300px 600px; */
+      }
+      .section2{
+        background-image: linear-gradient(to right, rgba(245, 241, 241, 0.5), white);
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .other-image{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .others{
+        max-width: 100%; 
+        height: 100%;
+    }
+    .simple-desc{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .addition{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .dashboard-wrapper{
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 100px );
+        width: 100%;
+    }
+    
+    .customer-order-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    }
+    .analysis-section{
+        display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    }
+    .table-container {
+        max-height: 200px;
+        font-size: 10px;
+     
+    }
+    .table-container table{
+        width: 98%;
+    }
+    .dashboard-table{
+         border: 1px solid black;
+        width: 98%;
+        
+    }
+    .dashboard-table table{
+        width: 98%;
+    }
+
+    .cost-table  { 
+        max-width: 95%;
+        max-height: 250px;
+        overflow-y: scroll;
+        text-align: center;
+        border: 1px solid black;
+        margin-bottom: 2px;
+     }
+     .cost-table table { 
+         text-align: center;
+        width: 98%;
+      }
+
+    .inner-details p{
+       font-size: 13.5px;
+        }
+
+        .view-section2{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .cost-details-form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .delivery{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+        }
+        .delivery form{
+            
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .delivery form label{
+        font-weight: bold;
+        }
+        
+        .delivery form button{
+            min-width: 150px;
+        }
+        .manage_users{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .manage_users_table{
+            
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 98%;
+            font-size: 10px;
+            overflow-x: scroll;
+        }
+        .manage_users_table table{
+            border: 1px solid black;
+           width: 100%;
+            overflow-x:scroll;
+            
+        }
+        .action-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .action-row button{
+            max-height:25px;
+        }
+
+}
